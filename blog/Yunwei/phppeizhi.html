@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>php运行环境配置</title>
+<meta name="keywords" content="冯飞个人博客" />
+<link rel="shortcut icon" href="../../images/ico/logo.ico"><!--title图标-->
+<meta name="description" content="渡尽劫波兄弟在，相逢一笑泯恩仇" />
+<link href="./css/styles.css" rel="stylesheet">
+<link href="./css/animation.css" rel="stylesheet">
+<!-- 返回顶部调用 begin -->
+<link href="./css/lrtk.css" rel="stylesheet" />
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/js.js"></script>
+<!-- 返回顶部调用 end-->
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+<style type="text/css">
+     .bloglist p{
+	 color:#ffffff;
+	 font-family:"微软雅黑";
+	 font-size:20px;  
+	 }
+	 .bloglist p span{
+	 color:#ffffff;
+	 font-family:"微软雅黑";
+	 font-size:15px; 
+	 }
+</style>
+</head>
+<body>
+<header>
+  <nav id="nav">
+    <ul>
+      <li><a href="../index.html" title="博客首页">博客首页</a></li>
+	  
+      <li><a href="../AboutMe.html" target="_self" title="关于博主">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于我&nbsp;&nbsp;</a></li>
+	  
+      <li><a href="../Programme.html" target="_self" title="编程">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编&nbsp;程&nbsp;&nbsp;&nbsp;</a></li>
+
+      <li><a href="../Yunwei.html" target="_self" title="运维">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;运&nbsp;维&nbsp;&nbsp;</a></li>
+	  
+      <li><a href="../NetworkSecurity.html" target="_self" title="信息安全">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;信息安全&nbsp;&nbsp;&nbsp;</a></li>
+
+      <li><a href="../MessageBoard.html" target="_self" title="留言板">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;留言板&nbsp;&nbsp;</a></li>
+	  <li><a href="../../Slow_life/Slow_life.html" target="_self" title="慢生活">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;慢生活&nbsp;&nbsp;&nbsp;</a></li>
+	  <li><a href="../../index.html" target="_self" title="欢迎页">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎页&nbsp;&nbsp;</a></li>
+	  
+    </ul>
+    <script src="js/silder.js"></script><!--获取当前页导航 高亮显示标题--> 
+  </nav>
+</header>
+<!--header end-->
+<div id="mainbody">
+  <div class="info">
+    <figure> <img src="../images/art.jpg"  alt="Panama Hat">
+      <figcaption><strong>渡人如渡己，渡已，亦是渡</strong> 当我们被误解时，会花很多时间去辩白。 但没有用，没人愿意听，大家习惯按自己的所闻、理解做出判别，每个人其实都很固执。与其努力且痛苦的试图扭转别人的评判，不如默默承受，给大家多一点时间和空间去了解。而我们省下辩解的功夫，去实现自身更久远的人生价值。其实，渡人如渡己，渡已，亦是渡人。</figcaption>
+    </figure>
+    <div class="card">
+      <h1>My Card</h1>
+      <p>昵称：画船听雨眠</p>
+      <p>职业：看门、扫地</p>
+      <p>Email：fengfeifighting@foxmail.com</p>
+      <ul class="linkmore">
+        <li><a href="http://weibo.com/925245189/" class="talk" title="我的新浪微博" target="_blank"></a></li>
+        <li><a href="http://weibo.com/925245189/" class="address" title="我的新浪微博" target="_blank"></a></li>
+        <li><a href="http://weibo.com/925245189/" class="email" title="我的新浪微博" target="_blank"></a></li>
+        <li><a href="http://weibo.com/925245189/" class="photos" title="我的新浪微博" target="_blank"></a></li>
+        <li><a href="http://weibo.com/925245189/" class="heart" title="我的新浪微博" target="_blank"></a></li>
+      </ul>
+    </div>
+  </div>
+  <!--info end-->
+
+  <div class="blank"></div>
+  <div class="blogs">
+    <ul class="bloglist">
+      <li>
+        <div class="arrow_box">
+          <div class="ti"></div>
+          <!--三角形-->
+          <div class="ci"></div>
+          <!--圆形-->
+          <h2 class="title"><a href="phppeizhi.html" target="">windows下php运行环境配置方法</a></h2>
+          <ul class="textinfo">
+            <a href="/"><img src="./images/php.jpg"></a>
+         
+<h1>windows下apache+php+mysql <br/>环境配置方法</h1>
+</br></br></br></br></br>
+<p><span>
+一 准备 </br>
+1 下载apache http://httpd.apache.org/download.cgi#apache24 httpd-2.2.22-win32-x86-openssl-0.9.8t.msi
+
+openssl表示带有openssl模块，利用openssl可给Apache配置SSL安全链接 
+
+2 下载php http://windows.php.net/downloads/releases/archives/ php-5.3.5-Win32-VC6-x86.zip 
+
+下载vc6版本 
+VC6:legacy Visual Studio 6 compiler，就是使用这个编译器编译的。 
+
+VC9:the Visual Studio 2008 compiler，就是用微软的VS编辑器编译的。 
+
+3 下载mysql http://mysql.llarian.net/Downloads/MySQL-5.5/mysql-5.5.23-winx64.msi 
+</p></span>
+
+<p><span>
+二 安装 </br>
+1 apache 比较简单,一路next完成. </br></br>
+<image src="images/phppeizhi1.png"  height="400px" width="400px"></br></br>
+
+浏览器验证,出现一下页面,成功</br></br>
+<image src="images/phppeizhi2.png"  height="100px" width="200px"></br></br>
+2 php安装
+下载zip包,直接解压到一个目录,目录重命名为php
+<image src="images/phppeizhi3.png"  height="400px" width="300px"></br></br>
+3 mysql </br>
+略 
+</p></span>
+<p><span>
+三 配置 <br/>
+php配置 <br/>
+php.ini-development 文件重命名为 php.ini 
+指定PHP扩展包的具体目录，以便调用相应的DLL文件 
+代码如下:<br/>
+
+; Directory in which the loadable extensions (modules) reside. <br/>
+; http://php.net/extension-dir <br/>
+; extension_dir = "./" <br/>
+; On windows: <br/>
+; extension_dir = "ext" <br/>
+<br/>
+修改为 
+代码如下:<br/>
+
+; Directory in which the loadable extensions (modules) reside. <br/>
+; http://php.net/extension-dir <br/>
+; extension_dir = "./" <br/>
+; On windows: <br/>
+extension_dir = "D:/servers/php/ext" <br/>
+<br/>
+去掉以下配置注释,支持mysql <br/>
+代码如下:<br/>
+<br/>
+extension=php_curl.dll <br/>
+extension=php_gd2.dll <br/>
+extension=php_mysql.dll <br/>
+extension=php_pdo_mysql.dll <br/>
+extension=php_pdo_odbc.dll <br/>
+<br/>
+支持session <br/>
+session.save_path = "e:/temp" <br/>
+上传文件目录配置 <br/>
+upload_tmp_dir ="e:/temp" <br/>
+时区配置 <br/>
+date.timezone =Asia/Shanghai <br/>
+
+apache配置 <br/>
+在#LoadModule vhost_alias_module modules/mod_vhost_alias.so下添加 
+代码如下:<br/>
+
+LoadModule php5_module "e:/servers/php/php5apache2_2.dll" <br/>
+PHPIniDir "e:/servers/php" <br/>
+AddType application/x-httpd-php .php .html .htm <br/><br/>
+
+web主目录修改 <br/>
+代码如下:<br/>
+
+DocumentRoot "D:/servers/Apache2.2/htdocs" <br/>
+
+改为<br/> 
+代码如下:<br/>
+
+DocumentRoot "D:/servers/phpweb" <br/>
+
+代码如下:<br/>
+
+&lt; Directory "D:/servers/Apache2.2/htdocs"&gt;<br/>
+
+改为<br/> 
+代码如下:<br/>
+
+&lt; Directory "D:/phpweb"&gt; <br/>
+
+代码如下:<br/>
+
+&lt; IfModule dir_module &gt;<br/>
+DirectoryIndex index.html <br/>
+&lt; /IfModule &gbook/t; <br/>
+
+改为<br/> 
+代码如下:<br/>
+
+&lt; IfModule dir_module &gt; <br/>
+DirectoryIndex index.php index.html <br/>
+&lt; /IfModule&gt; <br/>
+
+重启apache <br/><br/>
+
+mysql配置 <br/>
+略 <br/><br/>
+四 测试 <br/>
+建立phpweb目录 D:\servers\phpweb <br/>
+
+创建测试文件 index.php <br/>
+复制代码 代码如下:<br/>
+
+&lt;?php   <br/>
+phpinfo(); <br/>
+?&gt;<br/>
+
+浏览:http://localhost <br/>
+显示如下信息,说明配置成功!<br/>
+<image src="images/phppeizhi4.png"  height="400px" width="400px"></br></br>
+复制代码 代码如下:<br/>
+
+&lt;?php     <br/>
+$connect=mysql_connect("10.71.196.147","user",""); <br/>
+if(!$connect) echo "Mysql Connect Error!"; <br/>
+else echo "mysql 连接成功"; <br/>
+mysql_close(); <br/>
+?&gt;<br/>
+
+浏览:http://localhost/mysqltest.php 测试mysql连接<br/>
+</p></span>	
+          </ul>
+          <ul class="details">
+            <li class="likes"><a href="#">99+</a></li>
+            <li class="icon-time"><a href="#">2016-3-16</a></li>
+			<li class="comments"><a href="../Yunwei.html">>>>返回首页</a></li>
+          </ul>
+        </div>
+        <!--arrow_box end--> 
+      </li>
+	  
+    </ul>
+    <!--bloglist end-->
+    <aside>
+       <div class="tuijian">
+        <h2>推荐文章</h2>
+        <ol>
+          
+		  <li><span><strong>1</strong></span><a href="../Yunwei/phppeizhi.html">windows下php运行环境配置方法</a></li>
+
+        </ol>
+      </div>
+ <div class="toppic">
+        <h2>外链文章推荐</h2>
+        <ul>
+          <li><a href="https://www.zhihu.com/question/37148904#answer-28550440"><img src="../images/wailian/大学.jpg">为什么大学过的比高中还累？
+            <p>伤不起</p>
+            </a></li>
+			
+          <li><a href="https://www.zhihu.com/question/41365485#answer-31728928"><img src="../images/wailian/学生.jpg">典型的「学生思维」有哪些？
+            <p>感兴趣</p>
+            </a></li>
+			
+		 <li><a href="https://www.zhihu.com/question/23162933#answer-31737953"><img src="../images/wailian/健身.jpg">为什么大家要拼命健身？
+            <p >喜欢</p>
+            </a></li> <br/>
+		
+		<li><a href="https://www.zhihu.com/question/21368231#answer-31635943"><img src="../images/wailian/自控力.jpg">自控力极差的人如何自救？
+            <p>喜欢</p>
+            </a></li><br/>
+			
+			<li><a href="https://www.zhihu.com/question/31637529#answer-31549060"><img src="../images/wailian/注重外表.jpg">有什么道理是开始注重外表几年后才能悟出来的？
+            <p>喜欢</p>
+            </a></li>
+			
+			
+        </ul>
+      </div>
+      <div class="clicks">
+        <h2>热门点击</h2>
+        <ol>
+          <li><span><a href="../Programme.html">编程</a></span><a href="../Programme/xml.html">XML 简介</a></li>
+          <li><span><a href="../Network_Security.html">运维</a></span><a href="../Network_Security/pojiemima.html">黑客破解网络密码的10种方法</a></li>
+		  <li><span><a href="../Yunwei.html">信息安全</a></span><a href="../Yunwei/phppeizhi.html">windows下php运行环境配置方法</a></li>
+		  <li><span><a href="">慢生活</a></span><a href="">该板块暂未上架</a></li>
+
+        </ol>
+      </div>
+      
+      <div class="viny">
+        <dl>
+          <dt class="art"><img src="../images/遇见.jpg" alt="专辑"></dt>
+          <dd class="icon-song"><span></span>遇见</dd>
+          <dd class="icon-artist"><span></span>歌手：孙燕姿</dd>
+          <dd class="icon-album"><span></span>专辑：《我要快乐》</dd>
+          <dd class="icon-like"><span></span><a href="">喜欢</a></dd>
+          <dd class="music">
+            <audio src="../images/music/遇见.mp3" controls></audio>
+          </dd>
+          <!--也可以添加loop属性 音频加载到末尾时，会重新播放-->
+        </dl>
+      </div>
+    </aside>
+  </div>
+  <!--blogs end--> 
+</div>
+<!--mainbody end-->
+<footer >
+  <div class="footer-mid">
+    <div class="links">
+      <h2>友情链接</h2>
+      <ul>
+        <li><a href="http://www.baidu.com">百度一下，你就知道</a></li>
+         <li><a href="http://www.baidu.com">百度一下，你就知道</a></li>
+      </ul>
+    </div>
+   
+    <section class="flickr">
+      <h2>摄影欣赏</h2>
+      <ul>
+        <li><a href="/"><img src="../images/01.jpg"></a></li>
+        <li><a href="/"><img src="../images/02.jpg"></a></li>
+        <li><a href="/"><img src="../images/03.jpg"></a></li>
+        <li><a href="/"><img src="../images/04.jpg"></a></li>
+        <li><a href="/"><img src="../images/05.jpg"></a></li>
+        <li><a href="/"><img src="../images/06.jpg"></a></li>
+        <li><a href="/"><img src="../images/07.jpg"></a></li>
+        <li><a href="/"><img src="../images/08.jpg"></a></li>
+        <li><a href="/"><img src="../images/09.jpg"></a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="footer-bottom">
+    <p align="center">冯飞个人博客项目  &nbsp; &nbsp; Copyright © 2016 Allister All Rights Reserved | 晋ICP备16000829号 </p>
+  </div>
+</footer>
+<!-- jQuery仿腾讯回顶部和建议 代码开始 -->
+<div id="tbox"> <a id="togbook" href="../index.html" title="回到首页"></a><a id="gotop" href="javascript:void(0)"></a> </div>
+<!-- 代码结束 -->
+</body>
+</html>
